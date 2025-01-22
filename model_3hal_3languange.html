@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Disposal Device (APS)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #004d40, #00796b);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            color: #00796b;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        blockquote {
+            font-style: italic;
+            color: #555;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f9f9f9;
+            border-left: 5px solid #00796b;
+        }
+        footer {
+            background: linear-gradient(90deg, #004d40, #00796b);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact a {
+            color: #00796b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .highlight {
+            color: #004d40;
+            font-weight: bold;
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .side-box {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+        }
+        .product {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(120deg, #e8f5e9, #f1f8e9);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .product:nth-child(even) div {
+            text-align: left;
+            flex: 1;
+        }
+        .product img {
+            max-width: 150px;
+            margin: 0 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .product h3 {
+            margin-top: 0;
+            color: #00796b;
+        }
+        .product p {
+            margin: 5px 0;
+        }
+        .top-button {
+            display: block;
+            width: fit-content;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #00796b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .top-button:hover {
+            background-color: #004d40;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Waste Disposal Device (APS)</h1>
+        <p>Innovative Waste Management Solution with APS Incinerator Technology</p>
+    </header>
+
+    <button id="home-button" class="top-button hidden" onclick="showPage('page1')">Home</button>
+    <button id="varian-button" class="top-button hidden" onclick="showPage('page2')">View Product Variants</button>
+    <button id="lainnya-button" class="top-button hidden" onclick="showPage('page3')">View Other Product Variants</button>
+
+    <div id="page1" class="page active">
+        <div class="content">
+            <h2>Why is APS the Best Choice for Waste Management?</h2>
+            <ul>
+                <li><span class="highlight">Complete Combustion:</span> Convert waste into environmentally friendly CO2 and H2O.</li>
+                <li><span class="highlight">Plasma Technology:</span> Burns waste at high temperatures (700–1000°C) with minimal smoke.</li>
+                <li><span class="highlight">Fuel Efficiency:</span> Utilizes used oil and water as efficient, eco-friendly fuel alternatives.</li>
+                <li><span class="highlight">Types of Waste:</span> Plastic, paper, aluminum foil, food scraps, wet, dry, wood, cloth, styrofoam, diapers, pads, livestock waste, and even glass. <strong>Excludes metal and stones.</strong></li>
+                <li><span class="highlight">Versatile:</span> Suitable for households, mosques, villas, offices, schools, residential areas, medium-scale factories, etc.!</li>
+                <li><span class="highlight">Zero Waste System:</span> Highly efficient with only 1% ash residue.</li>
+                <li><span class="highlight">Economic Recycling:</span> Enables recycling with economic value up to 20%.</li>
+                <li><span class="highlight">Warranty & Support:</span> 6-month factory warranty and custom capacity options.</li>
+            </ul>
+
+            <blockquote>
+                "APS is the waste solution we need. Efficient and eco-friendly!"<br>– Kang Yana, Bandung
+            </blockquote>
+
+            <h2>Still Concerned About Safety?</h2>
+            <p>Rest assured, APS technology is tested and safe. More information on <strong>'Complete Combustion'</strong> is available online.</p>
+
+            <div class="contact">
+                <p><strong>Contact via WA:</strong> <a href="https://wa.me/087830828194">0878-3082-8194</a> (Kang Tedi)</p>
+                <p><strong>PT. Granuma Phatera Sejahtera</strong></p>
+                <p>JL. Raya Wanakerta RT 1/08 DS. Wanakerta Kec. Purwadadi Kab. Subang Jawa Barat</p>
+            </div>
+
+            <p class="highlight">"Take a step towards a cleaner and greener future with APS!"</p>
+        </div>
+    </div>
+
+    <div id="page2" class="page">
+        <div class="main-container">
+            <div class="side-box">
+                <div class="product">
+                    <img src="https://drive.google.com/file/d/1DDFf3kim7bKVpsJAxc8I_DpLsb9UMOXI/view?usp=sharing" alt="Type I Box">
+                    <div>
+                        <h3>Type I Box</h3>
+                        <p><strong>Dimensions:</strong> 30 x 30 cm, Total height: 40 cm</p>
+                        <p><strong>Capacity:</strong> 20 kg/hour</p>
+                        <p><strong>Coverage:</strong> 2 to 3 houses</p>
+                        <p><strong>Description:</strong> Box shape</p>
+                        <p><strong>Price:</strong> (*Price may vary)</p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="C:/Users/DELL/Documents/APS_PROJECT/gambar_APS/Tipe_2_Kotak.jpg" alt="Type II Box">
+                    <div>
+                        <h3>Type II Box</h3>
+                        <p><strong>Dimensions:</strong> 40 x 40 cm, Total height: 80 cm</p>
+                        <p><strong>Capacity:</strong> 30 kg/hour</p>
+                        <p><strong>Coverage:</strong> 30-50 houses</p>
+                        <p><strong>Description:</strong> Box shape</p>
+                        <p><strong>Price:</strong> (*Price may vary)</p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="C:/Users/DELL/Documents/APS_PROJECT/gambar_APS/Tipe_2_Silinder.jpg" alt="Type II Cylinder">
+                    <div>
+                        <h3>Type II Cylinder</h3>
+                        <p><strong>Dimensions:</strong> Diameter 40 cm, Total height: 80 cm</p>
+                        <p><strong>Capacity:</strong> 30 kg/hour</p>
+                        <p><strong>Coverage:</strong> 30-50 houses</p>
+                        <p><strong>Description:</strong> Cylinder shape</p>
+                        <p><strong>Price:</strong> (*Price may vary)</p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="C:/Users/DELL/Documents/APS_PROJECT/gambar_APS/Tipe_3_Silinder.jpg" alt="Type III Cylinder">
+                    <div>
+                        <h3>Type III Cylinder</h3>
+                        <p><strong>Dimensions:</strong> Diameter 50 cm, Total height: 150 cm</p>
+                        <p><strong>Capacity:</strong> 50-100 kg/hour</p>
+                        <p><strong>Coverage:</strong> 50-75 houses</p>
+                        <p><strong>Description:</strong> Without a chimney</p>
+                        <p><strong>Price:</strong> (*Price may vary)</p>
+                    </div>
+                </div>
+
+                <p><strong>Note:</strong> APS products can be customized as needed. Contact WA: 0878-3082-8194 (Kang Tedi).</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="page3" class="page">
+        <div class="main-container">
+            <div class="side-box">
+                <div class="product">
+                    <img src="C:/Users/DELL/Documents/APS_PROJECT/gambar_APS/Tipe_4_Silinder.jpg" alt="Type IV Cylinder">
+                    <div>
+                        <h3>Type IV Cylinder</h3>
+                        <p><strong>Dimensions:</strong> Diameter 60 cm, Total height: 200 cm</p>
+                        <p><strong>Capacity:</strong> 150-200 kg/hour</p>
+                        <p><strong>Coverage:</strong> 75-100 houses</p>
+                        <p><strong>Description:</strong> Without a chimney, equipped with hydronozier and NAF system</p>
+                        <p><strong>Price:</strong> (*Price may vary)</p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="C:/Users/DELL/Documents/APS_PROJECT/gambar_APS/Tipe_5_Silinder.jpg" alt="Type V Cylinder">
+                    <div>
+                        <h3>Type V Cylinder</h3>
+                        <p><strong>Dimensions:</strong> Diameter 60 cm, Total height: 250 cm</p>
+                        <p><strong>Capacity:</strong> 150-200 kg/hour</p>
+                        <p><strong>Coverage:</strong> 75-100 houses</p>
+                        <p><strong>Description:</strong> With a chimney</p>
+                        <p><strong>Price:</strong> (*Price may vary)</p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="C:/Users/DELL/Documents/APS_PROJECT/gambar_APS/Tipe_6_Kotak.jpg" alt="Type VI Box">
+                    <div>
+                        <h3>Type VI Box</h3>
+                        <p><strong>Dimensions:</strong> 60 x 60 cm, Total height: 250 cm</p>
+                        <p><strong>Capacity:</strong> 200-300 kg/hour</p>
+                        <p><strong>Coverage:</strong> 100-200 houses</p>
+                        <p><strong>Description:</strong> Two chimneys, and two combustion chambers</p>
+                        <p><strong>Price:</strong> (*Price may vary)</p>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <img src="C:/Users/DELL/Documents/APS_PROJECT/gambar_APS/Tipe_7_Kotak.jpg" alt="Type VII Box">
+                    <div>
+                        <h3>Type VII Box</h3>
+                        <p><strong>Dimensions:</strong> 120 x 120 x 120 cm, Total height: 250 cm</p>
+                        <p><strong>Capacity:</strong> 300-350 kg/hour</p>
+                        <p><strong>Coverage:</strong> More than 200 houses</p>
+                        <p><strong>Description:</strong> With a chimney</p>
+                        <p><strong>Price:</strong> (*Price may vary)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 PT. Granuma Phatera Sejahtera</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            const homeButton = document.getElementById('home-button');
+            const varianButton = document.getElementById('varian-button');
+            const lainnyaButton = document.getElementById('lainnya-button');
+
+            pages.forEach(page => page.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+
+            homeButton.classList.add('hidden');
+            varianButton.classList.add('hidden');
+            lainnyaButton.classList.add('hidden');
+
+            if (pageId === 'page1') {
+                varianButton.classList.remove('hidden');
+            } else if (pageId === 'page2') {
+                lainnyaButton.classList.remove('hidden');
+            } else if (pageId === 'page3') {
+                homeButton.classList.remove('hidden');
+            }
+        }
+
+        // Initialize the first page buttons
+        showPage('page1');
+    </script>
+</body>
+</html>
